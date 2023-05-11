@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Envoyer un formulaire</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            color: #333333;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666666;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+        input[type="submit"] {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <p><h1>Envoyer un formulaire</h1></br>
+     </center>
+    <form action="/form" method="post">
+    
+        <label for="nomlivre">Nom du livre :</label>
+        <input type="text" id="nomlivre" name="nomlivre" required>
+            
+        <label for="nomauteur">Nom de l'auteur :</label>
+        <input type="text" id="nomauteur" name="nomauteur" required>
+            
+        <input type="submit" value="VALIDER">
+    </form>
+</body>
+</html>
